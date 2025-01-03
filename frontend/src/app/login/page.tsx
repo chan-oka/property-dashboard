@@ -1,7 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { signInWithEmailAndPassword, FirebaseError } from 'firebase/auth';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { FirebaseError } from 'firebase/app';
 import { auth } from '@/lib/firebase';
 import { Button } from '@/components/ui/Button';
 import { useRouter } from 'next/navigation';

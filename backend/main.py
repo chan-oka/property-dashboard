@@ -16,7 +16,10 @@ logger = logging.getLogger(__name__)
 app = FastAPI()
 
 # 環境変数の設定
-ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "http://localhost:3000").split(",")
+ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "https://property-frontend-408609594730.asia-northeast1.run.app"
+]
 PROJECT_ID = os.getenv("PROJECT_ID", "okamolife")
 
 # CORSの設定
